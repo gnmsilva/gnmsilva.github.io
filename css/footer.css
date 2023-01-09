@@ -1,0 +1,95 @@
+.footer{
+    background: #000;    
+}
+
+.footer-container{
+    max-width: 1200px;
+    padding: 120px 20px 60px 20px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 150px;
+    align-items: center;
+}
+
+.footer-txt{
+    font-size: 1.5rem;
+    line-height: 1.33;
+    color: #ccc;
+}
+
+.footer-contato li{
+    font-weight: bold;
+    font-size: 2.25rem;
+    line-height: 1.1;
+    color: #fff;
+    margin-bottom: 30px;
+
+}
+
+.footer-contato li a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-copy{
+    font-size: 1.125rem;
+    color: #8f8f8f;
+    grid-column: 1 / -1;
+}
+
+.footer-email{
+    position: relative;
+}
+
+.footer-email::before{
+    content: "";
+    width: 31px;
+    height: 31px;
+    display: block;
+    background: url(../arquivos/alternate_email.png) no-repeat center center;
+    position: absolute;
+    top: 5px;
+    left: -51px;
+}
+
+.footer-tel{
+    position: relative;
+}
+
+.footer-tel::before{
+    content: "";
+    width: 31px;
+    height: 31px;
+    display: block;
+    background: url(../arquivos/add_call.svg) no-repeat center center;
+    position: absolute;
+    top: 5px;
+    left: -51px;
+}
+
+.footer-linkedin{
+    position: relative;
+}
+
+.footer-linkedin::before{
+    content: "";
+    width: 31px;
+    height: 31px;
+    display: block;
+    background: url(../arquivos/icone-linkedin.svg) no-repeat center center;
+    position: absolute;
+    top: 5px;
+    left: -51px;
+}
+
+@media (max-width: 800px){
+    .footer-container{
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+
+    .footer-contato li{
+        font-size: 1.5rem;
+    }
+}

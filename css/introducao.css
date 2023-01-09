@@ -1,0 +1,111 @@
+.introducao{
+    max-width: 1200px;
+    padding: 40px 20px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 150px;
+    align-items: center;
+}
+
+.introducao h1{
+    font-size: 4.5rem;
+    line-height: 1.125;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.introducao h1::before{
+    content: "";
+    background-image: linear-gradient(to right, #A25CD9, #C992F4) ;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    z-index: -1;
+    border-radius: 0 20px;
+    left: -15px;    
+}
+
+.introducao h1::after{
+    content: "";
+    background-color: #C992F4;
+    height: 5px;
+    width: 12ch;
+    position: absolute;
+    bottom: -10px;
+    left: 0px;
+}
+
+.introducao p {
+    font-size: 1.875rem;
+    font-weight: 500;
+    color: #525252;
+}
+
+@media (max-width: 1000px){
+    
+    .introducao{
+        gap: 100px;
+    }
+    
+    .introducao h1{
+        font-size: 3.5rem;
+    }
+
+    .introducao h1::before{
+        width: 40px;
+        height: 40px;
+        border-radius: 0 15px; 
+    }
+
+}
+
+@media (max-width: 800px){
+    
+    .introducao{
+        gap: 50px;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 600px){
+    
+    .introducao img{
+        display: none;
+    }
+
+    .introducao{
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+}
+
+@media (max-width: 400px){
+    
+    .introducao h1{
+        font-size: 3rem;
+    }
+
+    .introducao h1::before{
+        height: 10px;
+        top: -5px;
+        left: 0px;
+    }
+
+    .introducao p{
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 360px){
+    .introducao h1{
+        font-size: 2.8rem;
+    }
+}
+
+@media (max-width: 300px){
+    .introducao h1{
+        font-size: 2.3rem;
+    }
+}
+
