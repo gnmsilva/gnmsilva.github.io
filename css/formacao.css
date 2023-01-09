@@ -170,4 +170,14 @@
         content: none;
     }
 
+    .formacao-container::after{
+        width: 40px;
+        height: 40px;
+        border-radius: 0 15px;
+        background-image: linear-gradient(to right, #A25CD9, #C992F4);
+        position: absolute;
+        bottom: -25px;
+        left: 20px;       
+    }
+
 }
