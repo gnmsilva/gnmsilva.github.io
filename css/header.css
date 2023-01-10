@@ -30,7 +30,7 @@
     border-bottom: 2px solid #4D0B81;
 }
 
-.header-menu a::before{
+.header-menu a:hover::before{
     content: "";
     background-color: #C992F4;
     width: 16px;
